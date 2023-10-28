@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+
+/* navbar code from omkar patil */
+
+
+
+
+
+
+:root{
+    --black:#192a56;
+    --orange:#F95F1D;
+    --yellow:#ffa801;
+    --white:#fff;
+    --darkblack:#000;
+  }
+  
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border:none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    padding:0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+  }
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.7rem;
+    color:var(--yellow);
+    border:.2rem solid var(--yellow);
+    cursor: pointer;
+    background:none;
+    
+  }
+  
+  .btn:hover{
+    background:var(--yellow);
+    color:#fff;
+  }
+  
+  .heading{
+    text-align: center;
+    color:var(--black);
+    padding:1rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+  }
+  header{
+    position: fixed;
+    top:0; 
+    left:0;
+    width:100%;
+    /* z-index: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    background-color: var(--yellow);
+    z-index: 1000;
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    color:darkblue;
+    font-weight: bolder;
+  }
+  
+  header .navbar a{
+    font-size: 2rem;
+    font-weight:700;
+    margin-left: 2.5rem;
+    color:var(--darkblack);
+    
+  }
+  
+  header .navbar a:hover{
+    color:var(--white);
+  }
+  .home.image img{
+    display: flex;
+    background:url(image/);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    
+  } 

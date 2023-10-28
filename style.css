@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap');
+
+:root{
+  --black:#192a56;
+  --orange:#F95F1D;
+  --yellow:#ffa801;
+  --white:#fff;
+  --darkblack:#000;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; 
+  border:none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:0 7%;
+  padding-top: 7.5rem;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:.7rem 2.5rem;
+  font-size: 1.7rem;
+  color:var(--yellow);
+  border:.2rem solid var(--yellow);
+  cursor: pointer;
+  background:none;
+  
+}
+
+.btn:hover{
+  background:var(--yellow);
+  color:#fff;
+}
+
+.heading{
+  text-align: center;
+  color:var(--black);
+  padding:1rem;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+}
+
+header{
+  position: fixed;
+  top:0; 
+  left:0;
+  width:100%;
+  /* z-index: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 7%;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  background:#fff;
+  background-color: var(--yellow);
+  z-index: 1000;
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color:darkblue;
+  font-weight: bolder;
+}
+
+header .navbar a{
+  font-size: 2rem;
+  font-weight:700;
+  margin-left: 2.5rem;
+  color:var(--darkblack);
+  
+}
+
+header .navbar a:hover{
+  color:var(--white);
+}
+
+
+
+
+
+
+/* home starts from here////////////////////////////////////////////////////////////////////////////////////////////  */
+
+
+
+
+
+
+
+
+
+.home{
+  display: flex;
+  align-items: center;
+  max-height: fit-content;
+  background-size:cover;
+  background-position: center;
+  flex-wrap: wrap;
+}
+
+.home .image{
+  padding-top: 4rem;
+  flex:1 1 40rem;
+  width:100%;
+}
+
+.home .content{
+  padding:1rem;
+  flex:1 1 40rem;
+}
+
+.home .content h3{
+  color:#fff;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+}
+
+.home .content p{
+  color:#fff;
+  font-size: 1.7rem;
+}
+
+
+.home .content .btn{
+  color:#444;
+  background:#fff;
+  align-items: center;
+}
+
+.home .content .btn:hover{
+  color:#fff;
+  background:none;
+  border-color: #fff;
+  align-items: center;
+}
+
+
+
+/* home ends here//////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+/* services starts from here /////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+.service{
+  background:var(--black);
+}
+
+.service .heading{
+  color:#fff;
+}
+
+.service .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service .box-container .box{
+  padding:4rem;
+  margin:1rem;
+  flex:1 1 30rem;
+  border:.1rem solid #fff3;
+  text-align: center;
+}
+
+
+
+.service .box-container .box h3{
+  font-size: 2.5rem;
+  color:#fff;
+  padding:1rem 0;
+}
+
+.service .box-container .box p{
+  font-size: 1.5rem;
+  color:#fff;
+  padding-bottom:1rem;
+}
+
+.service .box-container .box:hover{
+  background:#fff;
+}
+
+.service .box-container .box:hover h3{
+  color:var(--black);
+}
+
+.service .box-container .box:hover p{
+  color:#666;
+}
+
+
+
+
+
+/* services ends here */
+/* team starts here ////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+.team{
+  background:var(--white);
+  
+}
+
+.team .heading{
+  color:#000;
+}
+
+.team .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team .box-container .box{
+  width:40rem;
+  height: 60rem;
+  background:#fff;
+  position: relative;
+  margin:1rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
+.team .box-container .box img{
+  height:200px;
+  width:250px;
+  
+  object-fit: cover;
+}
+
+.team .box-container .box h3{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.team .box-container .box span{
+  font-size: 1.5rem;
+  color:var(--orange);
+}
+
+.team .box-container .box p{
+  padding:1rem 2.5rem;
+  font-size: 1.3rem;
+  color:#666;
+}
+
+.team .box-container .box .share{
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 50%;
+  background:var(--white);
+  display: flex;
+  
+  justify-content: center;
+}
+
+.team .box-container .box .share a{
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  color:#fff;
+  font-size: 1.7rem;
+}
+
+.team .box-container .box .share a:hover{
+  background:#fff;
+  color:var(--black);
+}
+
+
+
+
+
+
+/* team ends here ////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* contact start here ////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contact .row{
+  
+  flex-wrap: wrap;
+  border:.1rem solid rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.contact .row form{
+  flex:1 1 40rem;
+  padding:2rem;
+}
+
+
+
+.contact .row form .inputBox{
+  position: relative;
+  
+}
+
+.contact .row form .inputBox input, .contact .row form .inputBox textarea{
+  width: 100%;
+  margin:1.5rem 0;
+  padding:.7rem 1rem;
+  font-size: 1.7rem;
+  color:#666;
+  border:.1rem solid rgba(0,0,0,.2);
+  text-transform: none;
+}
+
+.contact .row form .inputBox textarea{
+  height: 15rem;
+  resize: none;
+}
+
+.contact .row form .inputBox label{
+  font-size: 1.5rem;
+  position: absolute;
+  top:2.5rem; 
+  left:1rem;
+  color:#444;
+}
+
+.contact .row form .inputBox input:focus ~ label,
+.contact .row form .inputBox textarea:focus ~ label,
+.contact .row form .inputBox input:valid ~ label,
+.contact .row form .inputBox textarea:valid ~ label{
+  top:-.7rem; left:0;
+  color:var(--orange);
+}
+
+
+
+/* contact ends here////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.footer{
+  background:var(--black);
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+  margin:2rem;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color:#fff;
+  padding:1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  color:#fff;
+  padding:.5rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  color:#fff;
+  padding:.5rem 0;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.footer .credit{
+  font-size: 1rem;
+  background:#fff;
+  color:#444;
+  text-align: center;
+  padding:2.5rem 1rem;
+  letter-spacing: .1rem;
+}
+
+.footer .credit a{
+  color:var(--orange);
+}
+.my-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Padding around the button text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show a hand cursor on hover */
+}
+
+.my-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+
+
